@@ -1,0 +1,21 @@
+<topmenu-comp></topmenu-comp>
+<div class="jumbotron">
+  <div class="row" *ngIf="user.data">
+    <div class="col-md-2">
+      Name
+    </div>
+    <div class="col-md-10">{{user.data.name}}</div>
+  </div>
+  <div class="row" *ngIf="user.data">
+    <div class="col-md-2">
+      Email
+    </div>
+    <div class="col-md-10">{{user.data.email}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <button class="btn btn-lg btn-primary btn-block" (click)="edit()">Edit</button>
+    </div>
+    <div class="col-md-8"></div>
+  </div>
+</div>

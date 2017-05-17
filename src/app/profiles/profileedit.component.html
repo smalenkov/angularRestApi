@@ -1,0 +1,15 @@
+<topmenu-comp></topmenu-comp>
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-4">
+      <input name="name" [(ngModel)]="user.name" maxlength="255" class="form-control"
+             placeholder="Name" required autofocus>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="saveProfile(user)">Save</button>
+    </div>
+    <div class="col-md-8"></div>
+  </div>
+</div>

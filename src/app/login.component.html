@@ -1,0 +1,11 @@
+<form method="post" enctype="application/x-www-form-urlencoded" class="form-signin" role="form">
+  <h2 class="form-signin-heading">Please sign in</h2>
+  <input name="email" [(ngModel)]="user.email" maxlength="255" type="email" class="form-control"
+         placeholder="Email address" required autofocus>
+  <input name="password" [(ngModel)]="user.password" maxlength="255" type="password" class="form-control"
+         placeholder="Password" required>
+  <div *ngIf="done">
+    <div class="auth-error-message">Пользователь с такими данными не найден</div>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="submitDataAuth(user)">Sign in</button>
+</form>
